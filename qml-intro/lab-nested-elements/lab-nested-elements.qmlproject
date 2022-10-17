@@ -1,0 +1,10 @@
+import QmlProject 1.0
+
+Project {
+    mainFile: "lab-nested-elements.qml"
+
+    QmlFiles {
+        directory: "."
+    }
+}
+

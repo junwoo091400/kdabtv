@@ -13,7 +13,7 @@ Item {
     width: 300
     height: 115
 
-    Text {
+    TextInput {
         id: textElement
         x: 50
         y: 25
