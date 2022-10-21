@@ -16,6 +16,7 @@ Rectangle {
     color: "#00a3fc"
 
 //--> slide
+    // Image that is getting animated.
     AnimatedImage {
         id: animation
 
@@ -30,10 +31,12 @@ Rectangle {
         x: 100; y: 260; width: 200; height: 24
         color: "black"
 
+        // Rectangle that moves to indicate frame position
         Rectangle {
             width: 4; height: 24
             color: "red"
 
+            // Dynamic X coordinate manipulation
             x: (parent.width - width) * animation.currentFrame / animation.frameCount
         }
 

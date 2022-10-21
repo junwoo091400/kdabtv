@@ -14,6 +14,8 @@ Image {
     width: 1000; height: 1000
     source: "https://eoimages.gsfc.nasa.gov/images/imagerecords/74000/74393/world.topo.200407.3x5400x2700.jpg"
     fillMode: Image.PreserveAspectFit
+
+    // Progress bar
     Rectangle {
         color: "red"
         anchors { left: parent.left; bottom: parent.bottom }
@@ -22,6 +24,6 @@ Image {
         visible: image.progress != 1
     }
 
-    onStatusChanged: console.log(sourceSize)
+    onStatusChanged: console.log(sourceSize, image.progress)
 }
 

@@ -40,8 +40,8 @@ int main(int argc, char *argv[])
     // By using function pointers we get compile time parameter list checking.
     // Using the old-style SIGNAL/SLOT macros this would have been detected
     // as a run time warning only.
-    //QObject::connect(slider, &QSlider::sliderPressed,
-    //                 spin, &QSpinBox::setValue);
+    QObject::connect(slider, &QSlider::sliderPressed,
+                    spin, &QSpinBox::setValue);
 
     QTextEdit *textEdit = new QTextEdit();
     textEdit->setAttribute(Qt::WA_DeleteOnClose);
